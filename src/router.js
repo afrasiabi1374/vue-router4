@@ -6,6 +6,8 @@ import Post from './components/Post.vue'
 import ChildPost from './components/ChildPost.vue'
 import Pic from './components/Pic.vue'
 import NewImage from './components/NewImage.vue'
+import NotFound from './components/NotFound.vue'
+
 
 
 
@@ -19,8 +21,11 @@ const routes = [
         {path: 'childPost', component:ChildPost}
     ]},
     {path: '/pic', component:Pic,children:[
-        {path: ':id', component:NewImage}
+        {path: ':id',name:'aks', component:NewImage}
     ]},
+    {
+        path: '/:pathMatch(.*)*',name:'NotFound',component:NotFound
+    }
 ]
 
 const router = createRouter({
