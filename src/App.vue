@@ -4,6 +4,8 @@
     <router-link class="mr-2" to="/">Home</router-link>
     <router-link class="mr-2" to="/users">users</router-link>
     <router-link class="mr-2" to="/posts">posts</router-link>
+    <router-link class="mr-2" to="/pic/aliafrasiabi1374/ali.ali2">pic</router-link>
+
     <hr>
     <router-view></router-view>
   </div>
