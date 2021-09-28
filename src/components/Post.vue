@@ -3,6 +3,8 @@
   <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, porro ducimus repellat ullam veritatis necessitatibus deserunt cumque maiores officia possimus exercitationem iste voluptate quam sint assumenda ipsa reiciendis eaque rerum?
   </p>
+  <hr>
+  <router-view></router-view>
 </template>
 
 <script>
