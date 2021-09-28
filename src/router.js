@@ -11,10 +11,9 @@ import NewImage from './components/NewImage.vue'
 
 const routes = [
     {path: '/', component:Home},
-    {path: '/users', component:User,children:[
-        {path: ':id', component:ShowUser},
-        {path: 'create', component:User},
-        {path: 'edit/2', component:User},
+    {path: '/users',name:"users", component:User,children:[
+        {path: ':id',name:"showUser", component:ShowUser},
+
     ]},
     {path: '/posts', component:Post,children:[
         {path: 'childPost', component:ChildPost}
