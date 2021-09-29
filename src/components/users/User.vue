@@ -15,6 +15,10 @@
 import {ref} from 'vue'
 import {useRouter,useRoute} from "vue-router"
 export default {
+    beforeRouteEnter(to,from,next){
+        console.log('before route enter in component');
+        next()
+    },
     setup(){
         const title = ref("user page")
         //console.log(useRouter,useRoute)
